@@ -141,6 +141,12 @@ get_calib_param()
 
 if __name__ == '__main__':
 	try:
-		readData()
+		i = 0
+		while 1:
+			time.sleep(1)
+			i = i + 1
+			if i == 10:
+				readData()
+
 	except KeyboardInterrupt:
 		pass
